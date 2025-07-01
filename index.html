@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kreuzfall</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      text-align: center;
+      padding: 3em;
+    }
+    .sussurro {
+      color: crimson;
+      font-style: italic;
+    }
+    .gif-container {
+      margin-top: 3em;
+    }
+    .oculto {
+      display: none;
+    }
+    .botao-secreto {
+      margin-top: 2em;
+      background: none;
+      border: 1px solid white;
+      color: white;
+      padding: 0.5em 1em;
+      cursor: pointer;
+    }
+    audio {
+      margin-top: 2em;
+    }
+  </style>
+  <script>
+    function revelarMensagem() {
+      document.getElementById('oculto').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <h1>“A Cruz caiu.”</h1>
+  <p class="sussurro">Procure a borboleta. Ela não voa em vão.</p>
+  <p>[ Mensagem criptografada ]</p>
+  <a href="media/yomi1.mp4" download>Baixar visão fragmentada</a>
+
+  <button class="botao-secreto" onclick="revelarMensagem()">🐇 Tocar a borboleta</button>
+
+  <div id="oculto" class="oculto">
+    <p>Mensagem oculta decifrada:</p>
+    <p><code>01001101 01101111 01110010 01110011 01100101</code></p>
+    <p><i>Morse</i></p>
+    <audio controls>
+      <source src="media/voz_oculta.mp3" type="audio/mpeg">
+    </audio>
+    <p><a href="33.html">→ seguir a trilha da borboleta</a></p>
+  </div>
+
+  <div class="gif-container">
+    <p><i>Este site ainda está em construção...</i></p>
+    <img src="https://www.animatedimages.org/data/media/710/animated-under-construction-image-0038.gif" alt="Em construção">
+  </div>
+
+  <!-- Vigenère Key: musashi -->
+  <!-- Texto oculto: Quando a lebre corre, o portão se move. -->
+  <!-- Chave do próximo passo: Kreuz33 -->
+</body>
+</html>
