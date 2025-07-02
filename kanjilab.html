@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>実験室 - Kanji Lab</title>
+  <style>
+    body { background-color: #f2f2f2; color: #111; font-family: 'Courier New', monospace; text-align: center; padding: 3em; }
+    h1 { color: #660000; }
+    .kanji { font-size: 2em; margin: 1em 0; }
+    .trad { font-style: italic; color: #555; }
+    .oculto { display: none; color: crimson; margin-top: 2em; }
+    button { background: none; border: 1px solid #660000; color: #660000; padding: 0.5em 1.5em; cursor: pointer; }
+  </style>
+  <script>
+    function revelar() {
+      document.getElementById('oculto').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <h1>実験室: Laboratório de Kanji</h1>
+  <p class="kanji">愛 - Ai <br><span class="trad">amor</span></p>
+  <p class="kanji">矛盾 - Mujun <br><span class="trad">contradição</span></p>
+  <p class="kanji">沈黙 - Chinmoku <br><span class="trad">silêncio</span></p>
+  <p class="kanji">黄泉 - Yomi <br><span class="trad">mundo dos mortos</span></p>
+  <p class="kanji">鏡 - Kagami <br><span class="trad">espelho</span></p>
+
+  <button onclick="revelar()">Mostrar código oculto</button>
+  <div id="oculto" class="oculto">
+    <p>Key: <code>musashi</code></p>
+    <p>“O kanji esconde o que os olhos veem.”</p>
+    <p><a href="shadow.html">↪ Retornar ao espelho</a></p>
+  </div>
+
+  <!-- Comentário oculto: Link espiritual: https://youtu.be/BmIye624YZ0?si=QtvxrAOWXvgCK19s -->
+</body>
+</html>
