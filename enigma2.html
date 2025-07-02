@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Enigma 2 - A Cruz Não Caiu</title>
+  <style>
+    body { background-color: #e6f0ff; color: #001133; font-family: 'Courier New', monospace; text-align: center; padding: 3em; }
+    h1 { font-size: 2em; color: #003366; }
+    .poema { font-style: italic; margin: 2em 0; }
+    .kanji-btn {
+      background-color: transparent;
+      border: 1px solid #003366;
+      color: #003366;
+      padding: 0.5em 2em;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 2em;
+    }
+    .video-embed {
+      margin-top: 3em;
+    }
+    footer {
+      margin-top: 4em;
+      font-size: 0.8em;
+    }
+    .mensagem-glitch {
+      color: crimson;
+      font-weight: bold;
+      font-size: 1.2em;
+      animation: piscar 0.15s steps(2, start) infinite;
+      display: none;
+      margin-top: 2em;
+    }
+    @keyframes piscar {
+      to { visibility: hidden; }
+    }
+  </style>
+  <script>
+    function verificarSenha() {
+      const senha = prompt("Insira a palavra-chave para seguir.");
+      const msg = document.getElementById("msgErro");
+      if (senha === "魂" || senha.toLowerCase() === "tamashii") {
+        window.location.href = "enigma3.html";
+      } else {
+        msg.style.display = "block";
+        const audio = new Audio("https://cdn.pixabay.com/download/audio/2022/03/15/audio_f6dff0fd85.mp3?filename=dark-suspense-ambient-110876.mp3");
+        audio.play();
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>“A cruz não caiu — ela foi virada.”</h1>
+
+  <div class="poema">
+    <p>春はあけぼの、<br>
+    やうやう白くなりゆく山際、<br>
+    少しあかりて、紫だちたる雲の<br>
+    細くたなびきたる。</p>
+    <p><small>— Sei Shōnagon, Makura no Sōshi</small></p>
+  </div>
+
+  <p>A borboleta negra dançava sobre o espelho. <br>O coelho hesitou. O ponto singular sangrou.</p>
+
+  <button class="kanji-btn" onclick="verificarSenha()">Abrir com a alma (魂)</button>
+
+  <div id="msgErro" class="mensagem-glitch">
+    Uma alma tão escura pra combinar com a sua...<br>
+    目はウサギの魂の窓である
+  </div>
+
+  <div class="video-embed">
+    <p><i>Algo ecoa além da forma...</i></p>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/PffksCWUr9o?si=GbZjnTQ9rJYPhk1U" title="Video Enigma" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    <p>Canal do emissor: <a href="https://www.youtube.com/channel/UCw0yDnhj6VutBU5TLDxq8oQ" target="_blank">Visite</a></p>
+  </footer>
+</body>
+</html>

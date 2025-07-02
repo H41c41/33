@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contato Espiritual</title>
+  <style>
+    body { background-color: #000; color: #fff; font-family: monospace; text-align: center; padding: 4em; }
+    input, textarea {
+      width: 80%;
+      padding: 0.8em;
+      margin: 1em auto;
+      display: block;
+      border: 1px solid #333;
+      background-color: #111;
+      color: #fff;
+    }
+    button {
+      padding: 0.5em 1.5em;
+      background-color: crimson;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contato Espiritual</h1>
+  <p>Envie uma mensagem através do véu. Alguém ouvirá.</p>
+
+  <form action="https://formsubmit.co/SEUEMAIL@EXEMPLO.COM" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome ou codinome" required>
+    <textarea name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://H41c41.github.io/33/obrigado.html">
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
